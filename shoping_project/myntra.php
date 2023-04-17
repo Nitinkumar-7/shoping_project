@@ -182,6 +182,28 @@ session_start();
     ?>
     <!-- footer ends  -->
 
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCA2i9z69Epv-Ejsb5GLgVHWTeMkPjKhco",
+    authDomain: "shopingassignment.firebaseapp.com",
+    projectId: "shopingassignment",
+    storageBucket: "shopingassignment.appspot.com",
+    messagingSenderId: "584564676450",
+    appId: "1:584564676450:web:f71f16e900b1dc4965be3b",
+    measurementId: "G-YNX5P1MZ1B"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   </body>
 </html>
